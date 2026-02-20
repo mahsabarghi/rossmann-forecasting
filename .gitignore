@@ -1,0 +1,10 @@
+# --- raw and extracted data (local only) ---
+data/raw/
+data/extracts/
+
+# --- python bytecode ---
+__pycache__/
+*.py[cod]
+
+# --- macOS ---
+.DS_Store
