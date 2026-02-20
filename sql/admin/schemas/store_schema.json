@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Store",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Store identifier (0% missing in profiling)."
+  },
+  {
+    "name": "StoreType",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Store type (0% missing in profiling)."
+  },
+  {
+    "name": "Assortment",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Assortment level (0% missing in profiling)."
+  },
+  {
+    "name": "CompetitionDistance",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Distance to nearest competitor. ~0.27% missing in profiling; keep NULLABLE."
+  },
+  {
+    "name": "CompetitionOpenSinceMonth",
+    "type": "INT64",
+    "mode": "NULLABLE",
+    "description": "Competitor open month. Integer month (1-12). Pandas shows float64 due to NaN upcasting. ~31.75% missing in profiling."
+  },
+  {
+    "name": "CompetitionOpenSinceYear",
+    "type": "INT64",
+    "mode": "NULLABLE",
+    "description": "Competitor open year. ~31.75% missing in profiling."
+  },
+  {
+    "name": "Promo2",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Promo2 indicator (0/1). 0% missing in profiling."
+  },
+  {
+    "name": "Promo2SinceWeek",
+    "type": "INT64",
+    "mode": "NULLABLE",
+    "description": "Promo2 start week. ~48.79% missing in profiling."
+  },
+  {
+    "name": "Promo2SinceYear",
+    "type": "INT64",
+    "mode": "NULLABLE",
+    "description": "Promo2 start year. ~48.79% missing in profiling."
+  },
+  {
+    "name": "PromoInterval",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Promo2 interval string (e.g., 'Jan,Apr,Jul,Oct'). ~48.79% missing in profiling."
+  }
+]

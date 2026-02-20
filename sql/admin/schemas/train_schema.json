@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Store",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Store identifier (0% missing in profiling)."
+  },
+  {
+    "name": "DayOfWeek",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Day of week (1=Mon..7=Sun), 0% missing in profiling."
+  },
+  {
+    "name": "Date",
+    "type": "DATE",
+    "mode": "REQUIRED",
+    "description": "Calendar date, parsed as DATE; 0% missing in profiling."
+  },
+  {
+    "name": "Sales",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Daily sales (target for t). 0% missing in profiling."
+  },
+  {
+    "name": "Customers",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Number of customers. 0% missing in profiling."
+  },
+  {
+    "name": "Open",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Store open indicator (0/1). 0% missing in profiling."
+  },
+  {
+    "name": "Promo",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Promo indicator (0/1). 0% missing in profiling."
+  },
+  {
+    "name": "StateHoliday",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "State holiday category. 0% missing but mixed-type warning in pandas; keep STRING + NULLABLE for robustness."
+  },
+  {
+    "name": "SchoolHoliday",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "School holiday indicator (0/1). 0% missing in profiling."
+  }
+]
