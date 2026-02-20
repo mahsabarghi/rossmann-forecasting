@@ -8,3 +8,9 @@ __pycache__/
 
 # --- macOS ---
 .DS_Store
+
+# --- virtual environment---
+rossmannvenv/
+
+# Local lock file 
+requirements.lock.txt
